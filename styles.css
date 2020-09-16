@@ -14,7 +14,12 @@ img {
   border: 1px solid black;
   margin: 30px;
   width: 600px;
+  height: 600px;
   font-size: 4em;
+
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
 .container > * {
   border: 1px solid black;
@@ -22,25 +27,41 @@ img {
 }
 .red {
   background-color: red;
+  grid-column: 2/6;
+  grid-row: 1/2;
 }
 .orange {
   background-color: orange;
+  grid-column: 1/2;
+  grid-row: 2/-1;
 }
 .yellow {
   background-color: yellow;
+  grid-column: 2/4;
+  grid-row: 2/6;
 }
 .green {
   background-color: green;
+  grid-column: 4/6;
+  grid-row: 2/3;
 }
 .blue {
   background-color: blue;
+  grid-column: 2/6;
+  grid-row: 6/7;
 }
 .purple {
   background-color: purple;
+  grid-column: 6/7;
+  grid-row: 1/-1;
 }
 .gray {
   background-color: gray;
+  grid-column: 4/6;
+  grid-row: 3/6;
 }
 .white {
   background-color: white;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
